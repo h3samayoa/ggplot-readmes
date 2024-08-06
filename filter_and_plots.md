@@ -59,7 +59,7 @@ ggplot(data = hotel_bookings) +
   geom_point(mapping = aes(x = lead_time, y = children))
 ```
 
-![booking lead time with children chart](booking_time_child_1.png)
+![booking lead time with children chart](https://github.com/h3samayoa/ggplot-readmes/blob/main/assets/booking_time_child_1.png)
 
 Your stakeholder asked about the group of guests who typically make early bookings, and this plot showed that many of these guests do not have children.
 
