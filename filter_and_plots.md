@@ -72,7 +72,7 @@ ggplot(data = hotel_bookings) +
   geom_bar(mapping = aes(x = hotel, fill = market_segment))
 ```
 
-![booking lead time with children w/ color chart](booking_time_child_color.png)
+![booking lead time with children w/ color chart](https://github.com/h3samayoa/ggplot-readmes/blob/main/assets/booking_time_child_color.png)
 
 The geom_bar() function uses bars to create a bar chart. The chart has 'hotel' on the x-axis and 'count' on the y-axis (note: if you don't specify a variable for the y-axis, the code defaults to 'count'). The code maps the 'fill' aesthetic to the variable 'market_segment' to generate color-coded sections inside each bar.
 
@@ -86,7 +86,7 @@ ggplot(data = hotel_bookings) +
   facet_wrap(~market_segment)
 ```
 
-![booking lead time with children seperated chart](booking_time_child_sep.png)
+![booking lead time with children seperated chart](https://github.com/h3samayoa/ggplot-readmes/blob/main/assets/booking_time_child_sep.png)
 
 Now you have a separate bar chart for each market segment. Your stakeholder has a clearer idea of the size of each market segment, as well as the corresponding data for each hotel type.
 
@@ -152,9 +152,9 @@ ggplot(data = onlineta_city_hotels_v2) +
   geom_point(mapping = aes(x = lead_time, y = children))
 ```
 
-![stakeholder data v1]()
+![stakeholder data v1](https://github.com/h3samayoa/ggplot-readmes/blob/main/assets/without_pipe_operator.png)
 
-![stakeholder data v2](with_pipe_operator.png)
+![stakeholder data v2](https://github.com/h3samayoa/ggplot-readmes/blob/main/assets/with_pipe_operator.png)
 
 Based on your previous filter, this scatterplot shows data for online bookings for city hotels. The plot reveals that bookings with children tend to have a shorter lead time, and bookings with 3 children have a significantly shorter lead time (\<200 days). So, promotions targeting families can be made closer to the valid booking dates.
 
