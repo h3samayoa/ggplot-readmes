@@ -59,6 +59,8 @@ ggplot(data = hotel_bookings) +
   geom_point(mapping = aes(x = lead_time, y = children))
 ```
 
+![booking lead time with children chart](booking_time_child_1.png)
+
 Your stakeholder asked about the group of guests who typically make early bookings, and this plot showed that many of these guests do not have children.
 
 Now, your stakeholder wants to run a family-friendly promotion targeting key market segments. She wants to know which market segments generate the largest number of bookings, and where these bookings are made (city hotels or resort hotels).
@@ -69,6 +71,8 @@ First, you decide to create a bar chart showing each hotel type and market segme
 ggplot(data = hotel_bookings) +
   geom_bar(mapping = aes(x = hotel, fill = market_segment))
 ```
+
+![booking lead time with children w/ color chart](booking_time_child_color.png)
 
 The geom_bar() function uses bars to create a bar chart. The chart has 'hotel' on the x-axis and 'count' on the y-axis (note: if you don't specify a variable for the y-axis, the code defaults to 'count'). The code maps the 'fill' aesthetic to the variable 'market_segment' to generate color-coded sections inside each bar.
 
@@ -81,6 +85,8 @@ ggplot(data = hotel_bookings) +
   geom_bar(mapping = aes(x = hotel)) +
   facet_wrap(~market_segment)
 ```
+
+![booking lead time with children seperated chart](booking_time_child_sep.png)
 
 Now you have a separate bar chart for each market segment. Your stakeholder has a clearer idea of the size of each market segment, as well as the corresponding data for each hotel type.
 
