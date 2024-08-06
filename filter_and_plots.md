@@ -152,6 +152,10 @@ ggplot(data = onlineta_city_hotels_v2) +
   geom_point(mapping = aes(x = lead_time, y = children))
 ```
 
+![stakeholder data v1]()
+
+![stakeholder data v2](with_pipe_operator.png)
+
 Based on your previous filter, this scatterplot shows data for online bookings for city hotels. The plot reveals that bookings with children tend to have a shorter lead time, and bookings with 3 children have a significantly shorter lead time (\<200 days). So, promotions targeting families can be made closer to the valid booking dates.
 
 ## Activity Wrap Up
