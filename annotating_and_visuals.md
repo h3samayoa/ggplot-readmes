@@ -69,6 +69,8 @@ ggplot(data = hotel_bookings) +
   facet_wrap(~hotel)
 ```
 
+![refresher](https://github.com/h3samayoa/ggplot-readmes/blob/main/assets/old_chart.png)
+
 This creates two bar graphs: one for 'city_hotel' data and one for 'resort_hotel' data. The x axis is 'market_segment' and the y axis is 'count' for both charts.
 
 In this visualization it is unclear where the data is from, what the main takeaway is, or even what the data is showing. To explain all of that, you can leverage annotations in `ggplot2`.
@@ -81,6 +83,8 @@ ggplot(data = hotel_bookings) +
   facet_wrap(~hotel) +
   labs(title="# of Bookings per Market Segment by Hotel Type")
 ```
+
+![add title](https://github.com/h3samayoa/ggplot-readmes/blob/main/assets/with_title.png)
 
 This code chunk will generate the same chart as before, but now it includes a title to explain the data visualization more clearly to your audience.
 
@@ -116,6 +120,8 @@ ggplot(data = hotel_bookings) +
        subtitle=paste0("Data from: ", mindate, " to ", maxdate))
 ```
 
+![with min max](https://github.com/h3samayoa/ggplot-readmes/blob/main/assets/with_min_max.png)
+
 This code chunk will add the subtitle 'Data from: 2015 to 2017' underneath the title you added earlier to the chart.
 
 You realize that this chart is displaying the technical details a little too prominently. You don't want that to be the second thing people notice during the presentation. You decide to switch the `subtitle` to a `caption` which will appear in the bottom right corner instead.
@@ -128,6 +134,8 @@ ggplot(data = hotel_bookings) +
   labs(title="# of Bookings per Market Segment by Hotel Type",
        caption=paste0("Data from: ", mindate, " to ", maxdate))
 ```
+
+![with caption](https://github.com/h3samayoa/ggplot-readmes/blob/main/assets/with_caption.png)
 
 This code chunk makes a slight change to the visualization you created in the last chunk; now the "data from: 2015 to 2017" subtitle is in the bottom right corner.
 
@@ -143,6 +151,7 @@ ggplot(data = hotel_bookings) +
          x="Market Group",
          y="Number of Bookings")
 ```
+![clean x and y](https://github.com/h3samayoa/ggplot-readmes/blob/main/assets/clean_x_and_y.png)
 
 Now you have the data visualization from earlier, but now the x and y axis labels have been changed from 'market_segment' and 'count' to 'Market Segment' and 'Number of Bookings' so that the chart is clearer.
 
@@ -175,6 +184,8 @@ ggsave('hotel_booking_chart.png',
        width=16,
        height=8)
 ```
+
+![hotel book chart](https://github.com/h3samayoa/ggplot-readmes/blob/main/assets/hotel_booking_chart.png)
 
 ## Activity Wrap Up
 
